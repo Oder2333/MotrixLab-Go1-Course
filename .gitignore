@@ -1,0 +1,17 @@
+__pycache__
+runs
+outputs
+.pdm-python
+logs
+.idea
+.claude/*
+!.claude/skills/
+!.claude/skills/write-motrixlab-task-docs
+.venv
+node_modules
+docs/build
+docs/source/user_guide
+docs/source/index.md
+.worktrees
+.obsidian
+/unitree_sdk2_python/

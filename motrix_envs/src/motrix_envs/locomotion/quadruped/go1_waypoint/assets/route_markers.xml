@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="go1_waypoint_visual_markers">
+  <worldbody>
+    <geom contype="0" conaffinity="0" name="course_route_segment_0" type="capsule" fromto="-3 -2 0.014 -1 -2 0.014" size="0.012" rgba="0.223529 0.474510 0.737255 0.800" />
+    <geom contype="0" conaffinity="0" name="course_route_segment_1" type="capsule" fromto="-1 -2 0.014 -1 1 0.014" size="0.012" rgba="0.729412 0.482353 0.094118 0.800" />
+    <geom contype="0" conaffinity="0" name="course_route_segment_2" type="capsule" fromto="-1 1 0.014 2 1 0.014" size="0.012" rgba="0.184314 0.545098 0.415686 0.800" />
+    <geom contype="0" conaffinity="0" name="course_route_start" type="cylinder" pos="-3 -2 0.008" size="0.15 0.004" rgba="0.35 0.40 0.48 0.7" />
+    <geom contype="0" conaffinity="0" name="course_waypoint_A" type="cylinder" pos="-1 -2 0.008" size="0.35 0.004" rgba="0.223529 0.474510 0.737255 0.280" />
+    <geom contype="0" conaffinity="0" name="course_waypoint_A_centre" type="cylinder" pos="-1 -2 0.017" size="0.045 0.004" rgba="0.223529 0.474510 0.737255 1.000" />
+    <geom contype="0" conaffinity="0" name="course_waypoint_B" type="cylinder" pos="-1 1 0.008" size="0.35 0.004" rgba="0.729412 0.482353 0.094118 0.280" />
+    <geom contype="0" conaffinity="0" name="course_waypoint_B_centre" type="cylinder" pos="-1 1 0.017" size="0.045 0.004" rgba="0.729412 0.482353 0.094118 1.000" />
+    <geom contype="0" conaffinity="0" name="course_waypoint_C" type="cylinder" pos="2 1 0.008" size="0.35 0.004" rgba="0.184314 0.545098 0.415686 0.280" />
+    <geom contype="0" conaffinity="0" name="course_waypoint_C_centre" type="cylinder" pos="2 1 0.017" size="0.045 0.004" rgba="0.184314 0.545098 0.415686 1.000" />
+  </worldbody>
+</mujoco>

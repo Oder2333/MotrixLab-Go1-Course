@@ -1,0 +1,34 @@
+# @package _global_
+# Lesson-3 budget used in the completed cloud run; final replay accepted by the user.
+defaults:
+  - /algo_base@algo: rslrl.ppo
+  - _self_
+task:
+  env: go1-waypoint-flat
+  rllib: rslrl
+  algo: ppo
+  train_backend: torch
+num_envs: 512
+play_num_envs: 1
+seed: 42
+render: false
+play: false
+logging:
+  backend: tensorboard
+  interval: 10
+checkpoint:
+  interval: 100
+algo:
+  max_iterations: 3000
+  num_steps_per_env: 24
+  obs_groups:
+    actor: [policy]
+    critic: [value]
+  actor:
+    hidden_dims: [512, 256, 128]
+    init_noise_std: 0.5
+  critic:
+    hidden_dims: [512, 256, 128]
+  algorithm:
+    desired_kl: 0.01
+    entropy_coef: 0.005
