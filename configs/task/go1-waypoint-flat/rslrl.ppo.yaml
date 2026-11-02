@@ -7,7 +7,7 @@ task:
   env: go1-waypoint-flat
   rllib: rslrl
   algo: ppo
-  train_backend: torch
+  train_backend: null
 num_envs: 512
 play_num_envs: 1
 seed: 42
